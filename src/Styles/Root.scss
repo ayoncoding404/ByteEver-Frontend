@@ -1,0 +1,616 @@
+$whiteColor: #f2f2f2;
+$blackColor: #151515;
+$greyColor: #696969;
+$blank: #0000;
+$redColor: #ff492a;
+$darkGrey: #d1d1d1;
+
+//....!!Navbar!!....//
+
+.navbar {
+  display: grid;
+  position: relative;
+  top: 70px;
+  grid-template-columns: 30% 30%;
+  position: relative;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 450px;
+  z-index: 2;
+}
+
+.nav_menu {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  gap: 20px;
+  color: $whiteColor;
+}
+
+//....!!Hero Section New!!....//
+
+.hero__container {
+  display: flex;
+  position: relative;
+  bottom: 49px;
+}
+
+.hero__main {
+  display: grid;
+  position: relative;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  justify-items: center;
+  height: 100vh;
+
+  & .hero__left-side {
+    background-color: $whiteColor;
+    left: 0;
+    position: relative;
+    width: 960px;
+  }
+
+  & .hero__right-side {
+    background-color: $blackColor;
+    left: 0;
+    position: relative;
+    width: 960px;
+  }
+}
+
+.hero__text-section {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  & .hero__main-text {
+    color: $blackColor;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    justify-self: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 120px;
+    -webkit-text-stroke-width: 2.6px;
+    -webkit-text-stroke-color: $whiteColor;
+    z-index: 2;
+    line-height: 130px;
+  }
+
+  & .hero__social-para {
+    display: grid;
+    position: absolute;
+    grid-template-columns: 1fr;
+    top: 420px;
+    z-index: 2;
+    right: 6px;
+
+    & .hero__socials {
+      display: grid;
+      position: relative;
+      gap: 20px;
+      top: 12px;
+      right: 100px;
+    }
+  }
+}
+
+.hero__para {
+  display: flex;
+  position: relative;
+  color: $whiteColor;
+  left: 50px;
+}
+
+//....!!About Section!!.... //
+
+.about {
+  &__container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 80px;
+  }
+
+  &__dot {
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $darkGrey;
+    color: $blank;
+    text-align: center;
+  }
+
+  &__sol {
+    display: flex;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 60px;
+    bottom: 70px;
+    position: relative;
+    left: 10px;
+  }
+
+  &__v1 {
+    border-left: 1px solid $blackColor;
+    height: 70px;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    bottom: 30px;
+  }
+
+  &__paragraph {
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    top: 10px;
+    font-size: 18px;
+    font-weight: 100;
+    line-height: 1.8;
+  }
+
+  &__v-lines-group {
+    display: grid;
+    position: relative;
+    grid-gap: 200px;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  &__v-lines1 {
+    display: flex;
+    position: absolute;
+    gap: 100px;
+    border-left: 1px solid $whiteColor;
+    margin: 0;
+    top: -130px;
+    width: 2px;
+    height: 4222px;
+  }
+
+  &__v-lines2 {
+    display: flex;
+    position: absolute;
+    gap: 100px;
+    border-left: 1px solid $whiteColor;
+    margin: 0;
+    top: -130px;
+    width: 2px;
+    height: 4222px;
+    left: 480px;
+  }
+
+  &__v-lines3 {
+    display: flex;
+    position: absolute;
+    gap: 100px;
+    border-left: 1px solid $whiteColor;
+    margin: 0;
+    top: -130px;
+    width: 2px;
+    height: 4222px;
+    right: 480px;
+  }
+}
+
+//....!!Product Section!!....//
+
+.prodcontain {
+  display: flex;
+  flex-direction: column;
+  margin-top: 80px;
+}
+
+.pro-dot {
+  font-size: 150px;
+  font-weight: 700;
+  //   line-height: 400px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: $darkGrey;
+  color: $blank;
+
+  text-align: center;
+}
+
+.pro-sol {
+  display: flex;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 600;
+  line-height: 60px;
+
+  bottom: 70px;
+  position: relative;
+}
+
+.prod_pluginever {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+
+  &:hover {
+    background-color: $blackColor;
+    width: 1920px;
+    transition: 700ms;
+
+    .plugin_url,
+    .prod_title,
+    .prod_paragraph {
+      color: $whiteColor;
+    }
+
+    .prod_button {
+      .button_text {
+        color: $whiteColor;
+      }
+
+      &:hover {
+        .button_text {
+          color: $redColor;
+        }
+      }
+    }
+  }
+}
+
+.plugin_url {
+  color: $greyColor;
+  font-size: 20px;
+  font-weight: 200;
+  line-height: 56px;
+}
+
+.prod_title {
+  display: flex;
+  text-align: center;
+  position: relative;
+  font-size: 90px;
+  font-weight: 600;
+  line-height: 60px;
+  top: 12px;
+  margin-bottom: 40px;
+}
+
+.prod_paragraph {
+  display: flex;
+  color: $greyColor;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 25px;
+  top: 10px;
+}
+
+.prod_button {
+  margin-bottom: 10px;
+}
+
+.button_text {
+  color: $blackColor;
+  display: flex;
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  position: relative;
+  top: 30px;
+  font-weight: 500;
+
+  &.hovered {
+    color: $whiteColor;
+  }
+}
+
+//....!!JoinUs Section!!....//
+
+.join {
+  &__container {
+    margin-top: 70px;
+  }
+
+  &__horizontal-line {
+    border-top: 1px solid $whiteColor;
+    width: 1920px;
+    position: relative;
+    bottom: 0px;
+  }
+
+  &__dot {
+    font-size: 150px;
+    font-weight: 700;
+    letter-spacing: 7px;
+    text-transform: uppercase;
+    -webkit-text-stroke-width: 0.8px;
+    -webkit-text-stroke-color: $darkGrey;
+    color: $blank;
+    text-align: center;
+  }
+
+  &__team {
+    display: flex;
+    position: relative;
+    width: 550px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    left: 700px;
+    bottom: 86px;
+  }
+
+  &__paragraph {
+    display: flex;
+    text-align: center;
+    font-size: 47px;
+    font-weight: 600;
+    line-height: 60px;
+    bottom: 70px;
+    position: relative;
+    left: 10px;
+  }
+
+  &__button-red {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    right: 90px;
+    bottom: 20px;
+  }
+
+  &__button-text-red {
+    display: flex;
+    text-align: center;
+    font-size: 16px;
+    position: relative;
+    font-weight: 500;
+    color: $redColor;
+    left: 200px;
+  }
+}
+
+//....!!Feature Section!!....//
+
+.feat_container {
+  margin-top: 120px;
+}
+
+.feat_dot {
+  font-size: 160px;
+  font-weight: 700;
+  //   line-height: 400px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: $darkGrey;
+  color: $blank;
+  text-align: center;
+}
+
+.feat_sol {
+  display: flex;
+  position: relative;
+  text-align: center;
+  font-size: 42px;
+  font-weight: 600;
+  line-height: 60px;
+  bottom: 76px;
+}
+
+.date_writer {
+  display: grid;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: 1fr 1fr;
+}
+
+.date {
+  display: flex;
+  position: relative;
+  font-size: 12px;
+  color: $greyColor;
+  left: 400px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.writer {
+  display: flex;
+  position: relative;
+  font-size: 12px;
+  color: $greyColor;
+  right: 400px;
+  font-weight: 400;
+}
+
+.feat_para_black {
+  display: flex;
+  font-size: 26px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-weight: 500;
+  top: 10px;
+  line-height: 44px;
+}
+
+.feat_para_gray {
+  display: flex;
+  color: $greyColor;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  justify-content: center;
+  font-weight: 400;
+  top: 19px;
+  line-height: 28px;
+  padding-bottom: 40px;
+}
+
+.feat_button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 40px;
+  right: 72px;
+  padding-bottom: 60px;
+}
+
+.feat_button_text {
+  display: flex;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  font-weight: 500;
+  color: $redColor;
+  left: 188px;
+  top: -2px;
+}
+
+//....!!Contact Section!!....//
+
+.cont_contaier {
+  margin-top: 110px;
+}
+
+.cont_dot {
+  font-size: 160px;
+  font-weight: 700;
+  //   line-height: 400px;
+  letter-spacing: 7px;
+  text-transform: uppercase;
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: $darkGrey;
+  color: $blank;
+  text-align: center;
+}
+
+.cont_sol {
+  display: flex;
+  color: $greyColor;
+  position: relative;
+  text-align: center;
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 60px;
+  bottom: 76px;
+}
+
+.cont_talk {
+  display: flex;
+  color: $blackColor;
+  position: relative;
+  text-align: center;
+  font-size: 54px;
+  font-weight: 700;
+  line-height: 70px;
+  bottom: 76px;
+}
+
+.cont_info_title {
+  display: grid;
+  grid-template-columns: 30% 10% 30%;
+  color: $greyColor;
+  
+}
+
+.cont_info_detail {
+  display: grid;
+  grid-template-columns: 30% 10% 30%;
+  position: relative;
+  top: 20px;
+  text-align: center;
+  padding-bottom: 100px;
+  font-weight: 500;
+}
+
+.cont_button {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  right: 72px;
+  padding-bottom: 100px;
+}
+
+.cont_button_text {
+  display: flex;
+  text-align: center;
+  font-size: 16px;
+  position: relative;
+  font-weight: 500;
+  color: $redColor;
+  left: 188px;
+  top: -2px;
+}
+
+//....!!Vertical Line!!....//
+
+.v_lines_group {
+  display: grid;
+  position: relative;
+  grid-gap: 200px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.v_lines1 {
+  display: flex;
+  position: absolute;
+  gap: 100px;
+  border-left: 1px solid $whiteColor;
+  margin: 0;
+  top: -130px;
+  width: 2px;
+  height: 4335px;
+}
+
+.v_lines2 {
+  display: flex;
+  position: absolute;
+  gap: 100px;
+  border-left: 1px solid $whiteColor;
+  margin: 0;
+  top: -130px;
+  width: 2px;
+  height: 4335px;
+  left: -110px;
+}
+.v_lines3 {
+  display: flex;
+  position: absolute;
+  gap: 100px;
+  border-left: 1px solid $whiteColor;
+  margin: 0;
+  top: -130px;
+  width: 2px;
+  height: 4335px;
+  right: -60px;
+}
+
+.footer {
+  &__horizontal-line {
+    border-top: 1px solid $whiteColor;
+    width: 1920px;
+    position: relative;
+    bottom: 0px;
+    height: 20px;
+  }
+  &__text {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

@@ -1,0 +1,26 @@
+.main-div {
+  display: grid;
+  max-width: 100%;
+}
+
+body {
+  overflow-x: hidden;
+  margin-bottom: 20px;
+
+  }
+
+/* .v_lines_group {
+  display: flex;
+  position: relative;
+  gap: 400px;
+}
+
+.v_lines {
+  display: flex;
+  position: relative;
+  gap: 100px;
+  border-left: 1px solid red;
+  margin: 0;
+  top: 0px;
+  width: 2px;
+} */

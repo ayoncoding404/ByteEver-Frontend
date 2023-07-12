@@ -1,0 +1,16 @@
+<svg width="210" height="30" viewBox="0 0 210 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Buttonborder">
+<g id="Left">
+<rect id="Rectangle 37" width="3" height="10" fill="black"/>
+<rect id="Rectangle 38" x="1" y="3" width="3" height="9" transform="rotate(-90 1 3)" fill="black"/>
+<rect id="Rectangle 37_2" width="3" height="10" transform="matrix(1 0 0 -1 0 30)" fill="black"/>
+<rect id="Rectangle 38_2" width="3" height="9" transform="matrix(0 1 1 0 1 27)" fill="black"/>
+</g>
+<g id="Right">
+<rect id="Rectangle 37_3" width="3" height="10" transform="matrix(-1 0 0 1 210 0)" fill="black"/>
+<rect id="Rectangle 38_3" width="3" height="9" transform="matrix(0 -1 -1 0 209 3)" fill="black"/>
+<rect id="Rectangle 37_4" x="210" y="30" width="3" height="10" transform="rotate(180 210 30)" fill="black"/>
+<rect id="Rectangle 38_4" x="209" y="27" width="3" height="9" transform="rotate(90 209 27)" fill="black"/>
+</g>
+</g>
+</svg>
